@@ -14,3 +14,7 @@ print(len(nameList))
 
 allText = bsObj.findAll(id="text")
 print(allText[0].get_text)
+
+allTags = bsObj.findAll("span", {"class":{"green", "red"}})
+for tag in allTags:
+	print(tag.get_text())
