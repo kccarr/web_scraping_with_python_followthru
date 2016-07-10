@@ -8,3 +8,6 @@ bsObj = BeautifulSoup(html, "html5lib")
 images = bsObj.findAll("img", {"src":re.compile("\.\.\/img\/gifts\/img.*\.jpg")})
 for image in images:
 	print(image['src'])
+
+lamb = bsObj.findAll(lambda tag: len(tag.attrs) == 2)
+print(lamb)
