@@ -7,7 +7,7 @@ import re
 random.seed(datetime.datetime.now())
 def getLinks(articleUrl):
 	html = urlopen("http://en.wikipedia.org"+articleUrl)
-	bsObj = BeautifulSoup(html)
+	bsObj = BeautifulSoup(html, "html5lib")
 	return bsObj.find("div", {"id":"bodyContent"}).findAll("a",
 		href=re.compile("^(/wiki/)((?!:).)*$"))
 links = getLinks("/wiki/Kevin_Bacon")
