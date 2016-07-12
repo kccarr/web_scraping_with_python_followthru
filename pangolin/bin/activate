@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/cochewen/Desktop/web_scraping_projects/pangolin"
+VIRTUAL_ENV="/Users/cochewen/Desktop/web_crawling/web_scraping_with_python_followthru/pangolin"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
